@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es"/>
+<html>
+  <head>
+    <meta charset="uft-8"/>
+    <title>Certamen</title>
+  </head>
+  
+  <body>
+    <h1>CERTANEN</h1>
+    <hr
+     <br/>
+    <p>
+      <a href="crearsala.html">Crear </a>
+    </p>
+    <br/>
+    <p>
+      <a href="unirme.html">Unirme</a>
+    </p> <br/> <hr/>
+    <h3>solo para desarrolladores</h3>
+    <form>
+
+        <input type="password" id="password" placeholder="Ingresa la contraseña">
+    <button onclick="verificar()">Entrar</button>
+
+    <script>
+        function verificar() {
+            let contraseñaCorrecta = "1234"; // Cambia esto por la contraseña que quieras
+            let input = document.getElementById("password").value;
+
+            if (input === contraseñaCorrecta) {
+                window.location.href = "secret.html"; // Cambia esto por la página a la que quieres ir
+            } else {
+                alert("Contraseña incorrecta, intenta de nuevo.");
+            }
+        }
+    </script>
+  </body>
+  </html>
